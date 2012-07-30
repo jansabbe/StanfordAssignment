@@ -22,4 +22,8 @@ static NSString *const SQRT_OPERATOR = @"sqrt";
 - (void)pushOperand:(double)operand;
 
 - (double)performOperation:(NSString *)string;
+
+@property (readonly) id program;
++ (double)runProgram:(id) program;
++ (NSString*) descriptionOfProgram:(id)program;
 @end
