@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14c89972-0d4f-45e6-a060-7e7c818a8a3c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Homework1.iml" afterPath="$PROJECT_DIR$/.idea/Homework1.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Homework1/CalculatorBrain.h" afterPath="$PROJECT_DIR$/Homework1/CalculatorBrain.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Homework1/CalculatorBrain.m" afterPath="$PROJECT_DIR$/Homework1/CalculatorBrain.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Homework1/CalculatorViewController.h" afterPath="$PROJECT_DIR$/Homework1/CalculatorViewController.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Homework1/CalculatorViewController.m" afterPath="$PROJECT_DIR$/Homework1/CalculatorViewController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Homework1/en.lproj/MainStoryboard.storyboard" afterPath="$PROJECT_DIR$/Homework1/en.lproj/MainStoryboard.storyboard" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Homework1Tests/en.lproj/CalculatorBrainTests.m" afterPath="$PROJECT_DIR$/Homework1Tests/en.lproj/CalculatorBrainTests.m" />
     </list>
     <ignored path="Homework1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,40 +39,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CalculatorBrainTests.m" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="CalculatorBrainTests.m" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Homework1Tests/en.lproj/CalculatorBrainTests.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="32" selection-start="1503" selection-end="1503" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CalculatorBrain.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Homework1/CalculatorBrain.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0">
+            <state line="258" column="0" selection-start="7891" selection-end="7891" vertical-scroll-proportion="0.7746212">
               <folding>
-                <marker date="1335904503000" expanded="true" signature="557:643" placeholder="..." />
+                <element signature="e#117#149#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NSRange.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="2" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NSString.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSString.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="5" selection-start="6646" selection-end="6646" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -76,7 +53,7 @@
       <file leaf-file-name="CalculatorViewController.h" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Homework1/CalculatorViewController.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="48" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
+            <state line="11" column="48" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -85,17 +62,19 @@
       <file leaf-file-name="CalculatorViewController.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Homework1/CalculatorViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="0" selection-start="1738" selection-end="1738" vertical-scroll-proportion="0.0">
+            <state line="88" column="0" selection-start="2495" selection-end="2495" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CalculatorBrain.m" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CalculatorBrain.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Homework1/CalculatorBrain.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="0" selection-start="1873" selection-end="1873" vertical-scroll-proportion="0.8018494">
-              <folding />
+            <state line="74" column="5" selection-start="2514" selection-end="2514" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#117#150#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -117,17 +96,16 @@
         <option value="$PROJECT_DIR$/Homework1Tests/en.lproj/CalculatorBrainTest.m" />
         <option value="$PROJECT_DIR$/Homework1Tests/en.lproj/CalculatorBrainTests.h" />
         <option value="$PROJECT_DIR$/Homework1/CalculatorBrain.h" />
-        <option value="$PROJECT_DIR$/Homework1Tests/en.lproj/CalculatorBrainTests.m" />
-        <option value="$PROJECT_DIR$/Homework1/CalculatorBrain.m" />
         <option value="$PROJECT_DIR$/Homework1/CalculatorViewController.m" />
         <option value="$PROJECT_DIR$/Homework1/CalculatorViewController.h" />
+        <option value="$PROJECT_DIR$/Homework1/CalculatorBrain.m" />
+        <option value="$PROJECT_DIR$/Homework1Tests/en.lproj/CalculatorBrainTests.m" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
-    <option name="width" value="1373" />
-    <option name="height" value="878" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -229,14 +207,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="FullScreen" value="false" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.Homework1">
+  <component name="RunManager" selected="OCUnit.Homework1Tests">
     <configuration default="false" name="Homework1" type="AppleRunConfiguration" factoryName="Application" temporary="true" SCHEME_NAME="Homework1" PROJECT_NAME="Homework1" TARGET_NAME="Homework1" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.1_1" RUN_TARGET_PROJECT_NAME="Homework1" RUN_TARGET_NAME="Homework1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
       <envs />
       <RunnerSettings RunnerId="AppRunner" />
@@ -288,6 +266,7 @@
     <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
     <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
     <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
     <configuration useDefault="false">$USER_HOME$/.subversion_IDEA</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
   </component>
@@ -300,23 +279,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1373" height="878" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32971016" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24982357" sideWeight="0.21859904" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24962963" sideWeight="0.6702899" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23782639" sideWeight="0.8900966" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39975846" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32971016" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32971016" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32971016" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -387,26 +366,11 @@
         <state line="39" column="8" selection-start="1941" selection-end="1941" vertical-scroll-proportion="0.33248731" />
       </provider>
     </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/usr/include/architecture/i386/math.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="532" column="8" selection-start="21062" selection-end="21062" vertical-scroll-proportion="0.33203885" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Homework1/CalculatorBrain.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="0" selection-start="1873" selection-end="1873" vertical-scroll-proportion="0.8018494">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Homework1/CalculatorViewController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="0" selection-start="1738" selection-end="1738" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Homework1/CalculatorViewController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="48" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0" />
+        <state line="88" column="0" selection-start="2495" selection-end="2495" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSString.h">
@@ -419,19 +383,48 @@
         <state line="12" column="2" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Homework1Tests/en.lproj/CalculatorBrainTests.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/usr/include/architecture/i386/math.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="533" column="70" selection-start="21193" selection-end="21193" vertical-scroll-proportion="0.35152283">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Homework1/CalculatorBrain.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0" />
+        <state line="14" column="23" selection-start="358" selection-end="358" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Homework1/CalculatorViewController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="48" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Homework1/CalculatorBrain.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="5" selection-start="2514" selection-end="2514" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#117#150#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Homework1Tests/en.lproj/CalculatorBrainTests.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="32" selection-start="1503" selection-end="1503" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Homework1Tests/en.lproj/CalculatorBrainTests.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0" />
+        <state line="258" column="0" selection-start="7891" selection-end="7891" vertical-scroll-proportion="0.7746212">
+          <folding>
+            <element signature="e#117#149#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>

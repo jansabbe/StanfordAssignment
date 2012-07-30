@@ -12,13 +12,16 @@
 @interface CalculatorViewController ()
 @property(nonatomic) BOOL isEnteringNewNumber;
 @property(nonatomic, strong) CalculatorBrain *brain;
+@property(nonatomic, strong) NSDictionary* variableValues;
 @end
 
 @implementation CalculatorViewController
 @synthesize resultLabel = _resultLabel;
 @synthesize calculationLabel = _calculationLabel;
+@synthesize variableValuesLabel = _variableValuesLabel;
 @synthesize isEnteringNewNumber = _isEnteringNewNumber;
 @synthesize brain = _brain;
+@synthesize variableValues = _variableValues;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -29,6 +32,7 @@
     [self setResultLabel:nil];
     [self setBrain:nil];
     [self setCalculationLabel:nil];
+    [self setVariableValuesLabel:nil];
     [super viewDidUnload];
 }
 
@@ -39,8 +43,8 @@
 - (IBAction)enterPressed {
     NSString *numberEnteredByUserAsString = self.resultLabel.text;
     [self.brain pushOperand:[numberEnteredByUserAsString doubleValue]];
-    [self appendToCalculationLabel:numberEnteredByUserAsString];
     self.isEnteringNewNumber = YES;
+    [self updateLabels];
 }
 
 
@@ -49,14 +53,11 @@
         [self enterPressed];
     }
     NSString *operation = sender.currentTitle;
-    double result = [self.brain performOperation:operation];
-    self.resultLabel.text = [NSString stringWithFormat:@"%g", result];
-    [self appendToCalculationLabel:[NSString stringWithFormat:@"%@ =", operation]];
+    [self.brain performOperation:operation];
+    [self updateLabels];
 }
 
 - (IBAction)digitPressed:(UIButton *)sender {
-    [self removeExistingEqualsFromCalculationLabel];
-
     NSString *digit = sender.currentTitle;
     if (self.isEnteringNewNumber) {
         self.resultLabel.text = digit;
@@ -67,8 +68,6 @@
 }
 
 - (IBAction)decimalPointPressed {
-    [self removeExistingEqualsFromCalculationLabel];
-
     if (self.isEnteringNewNumber) {
         self.resultLabel.text = @"0.";
         self.isEnteringNewNumber = NO;
@@ -80,24 +79,54 @@
 - (IBAction)clearPressed {
     self.isEnteringNewNumber = YES;
     self.brain = [[CalculatorBrain alloc] init];
-    self.resultLabel.text = @"0";
-    self.calculationLabel.text = @"";
+    [self updateLabels];
+}
+
+- (IBAction)variablePressed:(UIButton*)sender {
+    [self.brain pushVariable: sender.currentTitle];
+    [self updateLabels];
+}
+
+- (IBAction)setupVariable1 {
+    self.variableValues = [NSDictionary dictionaryWithObjectsAndKeys:   [NSNumber numberWithInt:3], @"x",
+        [NSNumber numberWithInt:4], @"y",
+        [NSNumber numberWithDouble:2.3], @"a",
+        [NSNumber numberWithDouble:-5], @"b",
+                           nil];
+    [self updateLabels];
+}
+
+- (IBAction)setupVariable2 {
+    self.variableValues = [NSDictionary dictionaryWithObjectsAndKeys:   [NSNumber numberWithInt:1], @"x",
+        [NSNumber numberWithInt:0], @"y",
+        [NSNumber numberWithDouble:-1], @"a",
+        [NSNumber numberWithDouble:2], @"b",
+                           nil];
+    [self updateLabels];
+}
+
+- (IBAction)setupVariable3 {
+    self.variableValues = nil;
+    [self updateLabels];
 }
 
 - (void)appendToResultLabel:(NSString *)suffix {
     self.resultLabel.text = [self.resultLabel.text stringByAppendingString:suffix];
 }
 
-- (void)appendToCalculationLabel:(NSString *)suffix {
-    [self removeExistingEqualsFromCalculationLabel];
-    self.calculationLabel.text = [self.calculationLabel.text stringByAppendingFormat:@" %@", suffix];
-    if (([self.calculationLabel.text length]) > MAX_LENGTH_CALCULATIONLABEL) {
-        self.calculationLabel.text = [self.calculationLabel.text substringFromIndex:(([self.calculationLabel.text length]) - MAX_LENGTH_CALCULATIONLABEL)];
+- (void)updateLabels {
+    self.calculationLabel.text = [CalculatorBrain descriptionOfProgram:self.brain.program];
+    double result = [CalculatorBrain runProgram:self.brain.program
+                                 usingVariables:self.variableValues];
+    self.resultLabel.text = [NSString stringWithFormat:@"%g", result];
+    
+    NSMutableArray* variableValuesTexts = [[NSMutableArray alloc] init];
+    for (NSString* usedVariable in [CalculatorBrain variablesUsedInProgram:self.brain.program]) {
+        [variableValuesTexts addObject:[NSString stringWithFormat:@"%@ = %g", usedVariable, [[self.variableValues objectForKey:usedVariable] doubleValue]]];
     }
+    self.variableValuesLabel.text = [variableValuesTexts componentsJoinedByString:@", "];
+
 }
 
-- (void)removeExistingEqualsFromCalculationLabel {
-    self.calculationLabel.text = [self.calculationLabel.text stringByReplacingOccurrencesOfString:@" =" withString:@""];
-}
 
 @end

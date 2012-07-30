@@ -20,10 +20,15 @@ static NSString *const SQRT_OPERATOR = @"sqrt";
 
 @interface CalculatorBrain : NSObject
 - (void)pushOperand:(double)operand;
+- (void)pushVariable:(NSString*) variable;
 
 - (double)performOperation:(NSString *)string;
 
 @property (readonly) id program;
 + (double)runProgram:(id) program;
++ (double)runProgram:(id) program
+      usingVariables:(NSDictionary*) variableValues;
 + (NSString*) descriptionOfProgram:(id)program;
+
++ (NSSet *)variablesUsedInProgram:(id)o;
 @end

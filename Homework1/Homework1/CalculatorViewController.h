@@ -14,5 +14,6 @@ static NSString *const DECIMAL_SEPARATOR = @".";
 @interface CalculatorViewController : UIViewController
 @property(weak, nonatomic) IBOutlet UILabel *resultLabel;
 @property(weak, nonatomic) IBOutlet UILabel *calculationLabel;
+@property (weak, nonatomic) IBOutlet UILabel *variableValuesLabel;
 
 @end
