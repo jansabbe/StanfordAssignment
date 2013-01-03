@@ -13,8 +13,6 @@
 @end
 
 @implementation CalculatorBrain
-@synthesize programStack = _programStack;
-
 
 - (void)pushOperand:(double)operand {
     [self.programStack addObject:[NSNumber numberWithDouble:operand]];
