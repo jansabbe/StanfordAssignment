@@ -27,6 +27,8 @@
 }
 
 - (void) setup {
+    self.contentMode = UIViewContentModeRedraw;
+    self.contentScaleFactor = 1;
     self.origin = [self middlePoint];
     self.scale = 1;
 }
@@ -34,31 +36,47 @@
 #pragma mark - Drawing rect
 
 - (void)drawRect:(CGRect)rect {
-    CGContextRef context = UIGraphicsGetCurrentContext();
     
     [AxesDrawer drawAxesInRect:rect originAtPoint:self.origin scale:self.scale];
-
-    
-    
-    [[UIColor blueColor] setStroke];
-	CGContextBeginPath(context);
-
-    double minimumX = -self.origin.x/self.scale;
-    double maximumX = minimumX + rect.size.width/self.scale;
-    double y = [self.delegate giveYForX:minimumX inView:self];
-    CGContextMoveToPoint(context, minimumX, y);
-    
-    for (double x = minimumX; x <= maximumX; x+=1/self.scale) {
-        double y = [self.delegate giveYForX:x inView:self];
-        CGContextAddLineToPoint(context, self.origin.x + (x * self.scale),
-                                self.origin.y + (y * -self.scale));
-    }
-    
-	CGContextStrokePath(context);
+    [self drawGraphInRect:rect];
 }
 
 
 #pragma mark - Utility methods
+
+- (void) drawGraphInRect:(CGRect) rect {
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    UIGraphicsPushContext(context);
+    
+    [[UIColor blueColor] setStroke];
+	CGContextBeginPath(context);
+    
+    CGPoint startPoint = [self getPlotPointInViewCoordinatesWithX:rect.origin.x];
+    CGContextMoveToPoint(context, startPoint.x, startPoint.y);
+    
+    for (double xInViewCoordinates = rect.origin.x; xInViewCoordinates <= rect.size.width; xInViewCoordinates++) {
+        CGPoint point = [self getPlotPointInViewCoordinatesWithX:xInViewCoordinates];
+        CGContextAddLineToPoint(context, point.x, point.y);
+    }
+    
+	CGContextStrokePath(context);
+    UIGraphicsPopContext();
+}
+
+- (CGFloat) convertXToAxisCoordinates: (CGFloat) viewCoordinatesX {
+    return (viewCoordinatesX - self.origin.x) / self.scale;
+}
+
+- (CGPoint) convertToViewCoordinates: (CGPoint) point {
+    return CGPointMake(self.origin.x + (point.x * self.scale), self.origin.y + (point.y * -self.scale));
+}
+
+- (CGPoint) getPlotPointInViewCoordinatesWithX:(CGFloat) xInViewCoordinates {
+    double xInAxis = [self convertXToAxisCoordinates:xInViewCoordinates];
+    double yInAxis = [self.delegate giveYForX:xInAxis inView:self];
+    return [self convertToViewCoordinates:CGPointMake(xInAxis, yInAxis)];
+}
 
 - (CGPoint) middlePoint {
     return CGPointMake(self.bounds.origin.x + self.bounds.size.width / 2,
@@ -91,6 +109,12 @@
         CGPoint translation = [panRecognizer translationInView:self];
         self.origin = CGPointMake(self.origin.x + translation.x, self.origin.y + translation.y);
         [panRecognizer setTranslation:CGPointZero inView:self];
+    }
+}
+
+- (void) tap:(UITapGestureRecognizer*) tapRecognizer {
+    if (tapRecognizer.state == UIGestureRecognizerStateEnded) {
+        self.origin = [tapRecognizer locationInView:self];
     }
 }
 

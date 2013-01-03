@@ -22,6 +22,9 @@
                                                                                    action:@selector(pinch:)]];
     [self.graphView addGestureRecognizer:[[UIPanGestureRecognizer alloc] initWithTarget:self.graphView
                                                                                    action:@selector(pan:)]];
+    UITapGestureRecognizer* tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self.graphView action:@selector(tap:)];
+    tapRecognizer.numberOfTapsRequired = 3;
+    [self.graphView addGestureRecognizer:tapRecognizer];
 }
 
 - (double) giveYForX:(double)x inView:(GraphView *)view {
