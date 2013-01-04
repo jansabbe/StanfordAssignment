@@ -93,29 +93,5 @@
     [self setNeedsDisplay];
 }
 
-#pragma mark - Gestures
-
-- (void) pinch:(UIPinchGestureRecognizer*) pinchRecognizer {
-    if (pinchRecognizer.state == UIGestureRecognizerStateChanged ||
-        pinchRecognizer.state == UIGestureRecognizerStateEnded) {
-        self.scale *= pinchRecognizer.scale;
-        pinchRecognizer.scale = 1;
-    }
-}
-
-- (void) pan:(UIPanGestureRecognizer*) panRecognizer {
-    if (panRecognizer.state == UIGestureRecognizerStateChanged ||
-        panRecognizer.state == UIGestureRecognizerStateEnded) {
-        CGPoint translation = [panRecognizer translationInView:self];
-        self.origin = CGPointMake(self.origin.x + translation.x, self.origin.y + translation.y);
-        [panRecognizer setTranslation:CGPointZero inView:self];
-    }
-}
-
-- (void) tap:(UITapGestureRecognizer*) tapRecognizer {
-    if (tapRecognizer.state == UIGestureRecognizerStateEnded) {
-        self.origin = [tapRecognizer locationInView:self];
-    }
-}
 
 @end

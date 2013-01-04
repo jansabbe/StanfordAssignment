@@ -10,13 +10,14 @@
 		564600391695C2550077850C /* GraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 564600381695C2550077850C /* GraphViewController.m */; };
 		5646003C1695CA820077850C /* AxesDrawer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5646003A1695CA810077850C /* AxesDrawer.m */; };
 		5646003F1695CABC0077850C /* GraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5646003E1695CABC0077850C /* GraphView.m */; };
+		56798FE71696E7ED00A29318 /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56798FE61696E7ED00A29318 /* iPad.storyboard */; };
 		6E84A80799F2978C61ED6439 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E84A80799F2978C61ED6438 /* UIKit.framework */; };
 		6E84A80799F2978C61ED643B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E84A80799F2978C61ED643A /* Foundation.framework */; };
 		6E84A80799F2978C61ED643D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E84A80799F2978C61ED643C /* CoreGraphics.framework */; };
 		6E84A80799F2978C61ED6443 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E84A80799F2978C61ED6442 /* InfoPlist.strings */; };
 		6E84A80799F2978C61ED6445 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E84A80799F2978C61ED6444 /* main.m */; };
 		6E84A80799F2978C61ED6449 /* CalculatorAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E84A80799F2978C61ED6448 /* CalculatorAppDelegate.m */; };
-		6E84A80799F2978C61ED644C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E84A80799F2978C61ED644B /* MainStoryboard.storyboard */; };
+		6E84A80799F2978C61ED644C /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E84A80799F2978C61ED644B /* iPhone.storyboard */; };
 		6E84A80799F2978C61ED644F /* CalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E84A80799F2978C61ED644E /* CalculatorViewController.m */; };
 		6E84A80799F2978C61ED645A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E84A80799F2978C61ED6459 /* SenTestingKit.framework */; };
 		6E84A80799F2978C61ED645B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E84A80799F2978C61ED6438 /* UIKit.framework */; };
@@ -43,6 +44,7 @@
 		5646003B1695CA810077850C /* AxesDrawer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxesDrawer.h; sourceTree = "<group>"; };
 		5646003D1695CABC0077850C /* GraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphView.h; sourceTree = "<group>"; };
 		5646003E1695CABC0077850C /* GraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphView.m; sourceTree = "<group>"; };
+		56798FE61696E7ED00A29318 /* iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPad.storyboard; sourceTree = "<group>"; };
 		6E84A80799F2978C61ED642F /* Homework1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E84A80799F2978C61ED6438 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6E84A80799F2978C61ED643A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -53,7 +55,7 @@
 		6E84A80799F2978C61ED6446 /* Homework1-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Homework1-Prefix.pch"; sourceTree = "<group>"; };
 		6E84A80799F2978C61ED6447 /* CalculatorAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorAppDelegate.h; sourceTree = "<group>"; };
 		6E84A80799F2978C61ED6448 /* CalculatorAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorAppDelegate.m; sourceTree = "<group>"; };
-		6E84A80799F2978C61ED644A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		6E84A80799F2978C61ED644A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/iPhone.storyboard; sourceTree = "<group>"; };
 		6E84A80799F2978C61ED644D /* CalculatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorViewController.h; sourceTree = "<group>"; };
 		6E84A80799F2978C61ED644E /* CalculatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorViewController.m; sourceTree = "<group>"; };
 		6E84A80799F2978C61ED6450 /* Homework1Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Homework1Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,7 +159,8 @@
 				564600361695C22E0077850C /* GraphView */,
 				564600331695C2190077850C /* Model */,
 				564600351695C2240077850C /* CalculatorView */,
-				6E84A80799F2978C61ED644B /* MainStoryboard.storyboard */,
+				6E84A80799F2978C61ED644B /* iPhone.storyboard */,
+				56798FE61696E7ED00A29318 /* iPad.storyboard */,
 				6E84A80799F2978C61ED6448 /* CalculatorAppDelegate.m */,
 				6E84A80799F2978C61ED6447 /* CalculatorAppDelegate.h */,
 				6E84A80799F2978C61ED643F /* Supporting Files */,
@@ -239,6 +242,9 @@
 /* Begin PBXProject section */
 		6E84A80799F2978C61ED6429 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
 			buildConfigurationList = 6E84A80799F2978C61ED642A /* Build configuration list for PBXProject "Homework1" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -263,7 +269,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E84A80799F2978C61ED6443 /* InfoPlist.strings in Resources */,
-				6E84A80799F2978C61ED644C /* MainStoryboard.storyboard in Resources */,
+				6E84A80799F2978C61ED644C /* iPhone.storyboard in Resources */,
+				56798FE71696E7ED00A29318 /* iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,12 +342,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		6E84A80799F2978C61ED644B /* MainStoryboard.storyboard */ = {
+		6E84A80799F2978C61ED644B /* iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6E84A80799F2978C61ED644A /* en */,
 			);
-			name = MainStoryboard.storyboard;
+			name = iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 		6E84A80799F2978C61ED6463 /* InfoPlist.strings */ = {
@@ -423,6 +430,7 @@
 				INFOPLIST_FILE = "Homework1/Homework1-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -435,6 +443,7 @@
 				INFOPLIST_FILE = "Homework1/Homework1-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;

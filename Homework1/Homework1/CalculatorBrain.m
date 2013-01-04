@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 #import "CalculatorBrain.h"
 
+
 @interface CalculatorBrain ()
 @property(strong, nonatomic) NSMutableArray *programStack;
 @end
@@ -131,7 +132,11 @@
 }
 
 + (NSSet *)allowedOperators {
-    return [NSSet setWithObjects:PLUS_OPERATOR, MIN_OPERATOR, TIMES_OPERATOR, DIVIDE_OPERATOR, PI_OPERATOR, SIN_OPERATOR, COS_OPERATOR, SQRT_OPERATOR, nil];
+    static NSSet* allowedOperators;
+    if (!allowedOperators) {
+        allowedOperators = [NSSet setWithObjects:PLUS_OPERATOR, MIN_OPERATOR, TIMES_OPERATOR, DIVIDE_OPERATOR, PI_OPERATOR, SIN_OPERATOR, COS_OPERATOR, SQRT_OPERATOR, nil];
+    }
+    return allowedOperators;
 }
 
 + (BOOL)isOperator:(id)term {

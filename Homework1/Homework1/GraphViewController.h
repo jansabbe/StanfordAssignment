@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "GraphView.h"
+#import "CalculatorViewController.h"
 
-@interface GraphViewController : UIViewController
+@interface GraphViewController : UIViewController<SplitButtonPresenter>
 @property (weak, nonatomic) IBOutlet UILabel *descriptionProgram;
 @property (strong,nonatomic) id calculatorProgram;
 @property (weak, nonatomic) IBOutlet GraphView *graphView;

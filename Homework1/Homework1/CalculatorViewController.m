@@ -20,6 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self clearPressed];
+    self.splitViewController.delegate = self;
+    self.splitViewController.presentsWithGesture = NO;
 }
 
 - (void)viewDidUnload {
@@ -99,6 +101,44 @@
     if ([segue.identifier isEqualToString:@"ShowGraph"]) {
         [segue.destinationViewController setCalculatorProgram:self.brain.program];
     }
+}
+
+#pragma mark - Graph button
+
+- (IBAction)showGraph:(UIButton*)sender {
+    GraphViewController* graphViewController = [self.splitViewController.viewControllers lastObject];
+    graphViewController.calculatorProgram = self.brain.program;
+}
+
+#pragma mark - Delegation of split view controller stuff
+
+-(BOOL) splitViewController:(UISplitViewController *)svc
+   shouldHideViewController:(UIViewController *)vc
+              inOrientation:(UIInterfaceOrientation)orientation
+{
+    return UIInterfaceOrientationIsPortrait(orientation);
+}
+
+-(void) splitViewController:(UISplitViewController *)svc
+     willHideViewController:(UIViewController *)aViewController
+          withBarButtonItem:(UIBarButtonItem *)barButtonItem
+       forPopoverController:(UIPopoverController *)pc   {
+    barButtonItem.title = @"Calculator";
+    [[self splitButtonPresenter] showSplitButton:barButtonItem];
+}
+
+-(void) splitViewController:(UISplitViewController *)svc
+     willShowViewController:(UIViewController *)aViewController
+  invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem {
+    [[self splitButtonPresenter] hideSplitButton];
+}
+
+- (id<SplitButtonPresenter>) splitButtonPresenter {
+    id controller = [self.splitViewController.viewControllers lastObject];
+    if ([[self.splitViewController.viewControllers lastObject] conformsToProtocol:@protocol(SplitButtonPresenter) ]) {
+        return controller;
+    }
+    return nil;
 }
 
 @end
